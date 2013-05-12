@@ -44,6 +44,7 @@ def display():
    
    glClear(GL_COLOR_BUFFER_BIT)
    glPushMatrix()
+   glColor3f(1.0, 0.0, 1.0) 
    glBegin(GL_POLYGON)
    glVertex2d(50*cos(angle), 50*sin(angle))
    for n in range(circleV):
@@ -66,7 +67,7 @@ def display():
    glEnd()
    
    glColor(1.0, 0.0, 0.0)
-   glLineWidth(4.0)
+   glLineWidth(5.0)
    glBegin(GL_LINES)
    glVertex2d(0.0, 0.0)
    glVertex2d(10*sin(h), 10*cos(h))
